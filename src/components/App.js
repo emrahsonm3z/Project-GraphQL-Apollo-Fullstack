@@ -3,13 +3,13 @@ import React from 'react'
 
 // ------------------------------------ Relative Imports --
 import '../styles/App.css'
-import ExchangeRates from './ExchangeRates'
+import Dogs from './Dogs'
 
 // ---------------------------------------- App Component --
 const App = () => (
   <div className="App">
-    <h2>My first Apollo app! 🚀</h2>
-    <ExchangeRates />
+    <h2>My first Apollo app!</h2>
+    <Dogs />
   </div>
 )
 
