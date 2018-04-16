@@ -5,8 +5,8 @@ import ApolloClient from 'apollo-boost'
 import gql from 'graphql-tag'
 
 // ------------------------------------ Relative Imports --
-import './index.css'
 import App from './App'
+import './styles/index.css'
 import registerServiceWorker from './registerServiceWorker'
 
 const client = new ApolloClient({
