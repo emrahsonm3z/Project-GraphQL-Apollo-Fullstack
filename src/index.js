@@ -8,9 +8,16 @@ import { ApolloProvider } from 'react-apollo'
 import './styles/index.css'
 import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
+import { defaults, resolvers } from './resolvers'
+import typeDefs from './typeDefs'
 
 const client = new ApolloClient({
-  uri: 'https://8v9r9kpn7q.lp.gql.zone/graphql',
+  uri: `https://nx9zvp49q7.lp.gql.zone/graphql`,
+  clientState: {
+    defaults,
+    resolvers,
+    typeDefs,
+  },
 })
 
 // -------------------------------- Render App Component --
