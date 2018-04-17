@@ -21,9 +21,11 @@ app.use('/graphql', bodyParser.json(), graphqlExpress({ schema }))
 app.use('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }))
 
 // --------------------------------------- Server Listen --
-app.listen(3000, serverListenCB)
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, serverListenCB)
 
 // ********************************************************
 function serverListenCB() {
-  console.log('Go to http://localhost:3000/graphiql to run queries!')
+  console.log(`GrapghQL server running on port: ${PORT}.`)
 }
