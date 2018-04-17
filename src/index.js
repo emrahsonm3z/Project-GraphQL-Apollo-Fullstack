@@ -10,7 +10,7 @@ import App from './components/App'
 import registerServiceWorker from './registerServiceWorker'
 
 const client = new ApolloClient({
-  uri: 'https://nx9zvp49q7.lp.gql.zone/graphql',
+  uri: 'https://8v9r9kpn7q.lp.gql.zone/graphql',
 })
 
 // -------------------------------- Render App Component --
