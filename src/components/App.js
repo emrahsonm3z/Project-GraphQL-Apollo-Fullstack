@@ -3,20 +3,15 @@ import React, { Component } from 'react'
 
 // ------------------------------------ Relative Imports --
 import '../styles/App.css'
-import AddTodo from './Todos/AddTodo'
-import Todos from './Todos/Todos'
+import FilterLink from './LocalState/FilterLink'
 
 // ---------------------------------------- App Component --
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div>
-        <AddTodo />
-        <Todos />
+        <FilterLink />
       </div>
     )
   }
 }
-
-// ********************************************************
-export default App
