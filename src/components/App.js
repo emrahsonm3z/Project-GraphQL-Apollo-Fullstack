@@ -3,23 +3,16 @@ import React, { Component } from 'react'
 
 // ------------------------------------ Relative Imports --
 import '../styles/App.css'
-import Dogs from './Dogs'
-import DogPhoto from './DogPhoto'
+import AddTodo from './Todos/AddTodo'
+import Todos from './Todos/Todos'
 
 // ---------------------------------------- App Component --
 class App extends Component {
-  state = { selectedDog: null }
-
-  onDogSelected = ({ target }) => {
-    this.setState(() => ({ selectedDog: target.value }))
-  }
-
   render() {
     return (
       <div>
-        <h2>Building Query components</h2>
-        {this.state.selectedDog && <DogPhoto breed={this.state.selectedDog} />}
-        <Dogs onDogSelected={this.onDogSelected} />
+        <AddTodo />
+        <Todos />
       </div>
     )
   }
