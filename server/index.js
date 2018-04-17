@@ -1,11 +1,11 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const { graphqlExpress, graphiqlExpress } = require('apollo-server-express')
-const { makeExecutableSchema } = require('graphql-tools')
+import express from 'express'
+import bodyParser from 'body-parser'
+import { graphqlExpress, graphiqlExpress } from 'apollo-server-express'
+import { makeExecutableSchema } from 'graphql-tools'
 
 // ------------------------------------ Relative Imports --
-const typeDefs = require('./typeDefs')
-const resolvers = require('./resolvers')
+import typeDefs from './typeDefs'
+import resolvers from './resolvers'
 
 // -------------------------------------- GraphQL Schema --
 const schema = makeExecutableSchema({
