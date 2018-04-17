@@ -37,6 +37,4 @@ export default function Dogs({ onDogSelected }) {
 }
 
 // ------------------------------------------- PropTypes --
-Dogs.propTypes = {
-  onDogSelected: func.isRequired,
-}
+Dogs.propTypes = { onDogSelected: func.isRequired }
